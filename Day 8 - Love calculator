@@ -1,0 +1,21 @@
+def calculate_love_score(name1,name2):
+    N = (name1 + name2).lower()
+    
+    t = N.count("t")
+    r = N.count("r")
+    u = N.count("u")
+    e = N.count("e")
+    first_digit = str(t + r + u + e)
+    
+    l = N.count("l")
+    o = N.count("o")
+    v = N.count("v")
+    e = N.count("e")
+    second_digit = str(l + o + v + e)
+    
+    score = int(first_digit+second_digit)
+    print(score)
+calculate_love_score(name1=str(input()),name2=str(input()))
+    
+            
+    

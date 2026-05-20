@@ -1,0 +1,15 @@
+def move():
+    print("move forward")
+def turn_left():
+    print("turn left")
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+def move_triangle():
+    move()
+    turn_left()
+    move()
+    turn_left()
+    move()
+move_triangle()
